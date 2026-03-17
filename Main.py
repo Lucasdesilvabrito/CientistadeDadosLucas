@@ -13,6 +13,7 @@ dados = [
 
 
 
+
 for i in range(len(dados)): #aqui o sistema ta lendo o nome e as notas de cada um
     nome = dados[i][0]
     notas = dados[i][1]
@@ -35,3 +36,6 @@ else:
 
 topAluno = MelhorAluno(dados)
 print(f"O melhor estudande do semestre com a maior média foi: {topAluno[0]} com média: {topAluno[1]}")
+
+gerarRelatorio(dados)
+print("Relatório gerado no arquivo relatorio.txt")
