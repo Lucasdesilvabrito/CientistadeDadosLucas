@@ -11,6 +11,7 @@ dados = [
     ("Rodrigo Tadeu", [10,10,10,10,10])
 ]
 
+
 for i in range(len(dados)): #aqui o sistema ta lendo o nome e as notas de cada um
     nome = dados[i][0]
     notas = dados[i][1]
@@ -22,4 +23,11 @@ for i in range(len(dados)): #aqui o sistema ta lendo o nome e as notas de cada u
 
     media = calcularMedia(notas) #media
 
-    print(f"O aluno {nome} fechou o semestre com nota média de: {media}")
+    print(f"O aluno {nome} fechou o semestre com nota média de: {media
+
+rec = alunosRecuperacao(dados)
+if len(rec) > 0:
+    print(f"Os alunos a seguir estão de recuperação: {rec}")
+
+else:
+    print("Nao existem alunos de recuperação")
