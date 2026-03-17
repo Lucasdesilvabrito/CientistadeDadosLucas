@@ -11,5 +11,31 @@ dados = [
     ("Rodrigo Tadeu", [10,10,10,10,10])
 ]
 
+
+
+
+for i in range(len(dados)): #aqui o sistema ta lendo o nome e as notas de cada um
+    nome = dados[i][0]
+    notas = dados[i][1]
+
+    if len(notas) == 0:
+        print(f"A lista de notas de {nome} está vazia, adicione as notas")
+    
+    adicionar = notasAusentes(nome,notas) #adicionar notas que nao tem na lista
+
+    media = calcularMedia(notas) #media
+
+    print(f"O aluno {nome} fechou o semestre com nota média de: {media
+
+rec = alunosRecuperacao(dados)
+if len(rec) > 0:
+    print(f"Os alunos a seguir estão de recuperação: {rec}")
+
+else:
+    print("Nao existem alunos de recuperação")
+
+topAluno = MelhorAluno(dados)
+print(f"O melhor estudande do semestre com a maior média foi: {topAluno[0]} com média: {topAluno[1]}")
+
 gerarRelatorio(dados)
 print("Relatório gerado no arquivo relatorio.txt")
