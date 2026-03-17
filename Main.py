@@ -11,3 +11,5 @@ dados = [
     ("Rodrigo Tadeu", [10,10,10,10,10])
 ]
 
+topAluno = MelhorAluno(dados)
+print(f"O melhor estudande do semestre com a maior média foi: {topAluno[0]} com média: {topAluno[1]}")
