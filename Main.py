@@ -11,3 +11,5 @@ dados = [
     ("Rodrigo Tadeu", [10,10,10,10,10])
 ]
 
+gerarRelatorio(dados)
+print("Relatório gerado no arquivo relatorio.txt")
